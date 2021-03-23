@@ -85,7 +85,6 @@ public abstract class AbstractXMLRepository<ID, E extends HasID<ID>> extends Abs
 //       writeToFile();
 //       }
        writeToFile();
-
        return entity1;
    }
     /**

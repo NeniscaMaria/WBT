@@ -1,0 +1,12 @@
+
+Tema: 82
+Nota: 5.0
+Predata in saptamana: 6
+Deadline: 4
+Feedback: asdas
+
+Tema: 82
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 4
+Feedback: abcde
