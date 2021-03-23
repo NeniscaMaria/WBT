@@ -1,0 +1,12 @@
+
+Tema: 25
+Nota: 1.0
+Predata in saptamana: 8
+Deadline: 5
+Feedback: djsfd
+
+Tema: 82
+Nota: 10.0
+Predata in saptamana: 7
+Deadline: 7
+Feedback: asj

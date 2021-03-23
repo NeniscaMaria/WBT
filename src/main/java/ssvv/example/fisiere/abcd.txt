@@ -1,0 +1,60 @@
+
+Tema: 82
+Nota: 5.0
+Predata in saptamana: 6
+Deadline: 4
+Feedback: asdas
+
+Tema: 82
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 4
+Feedback: abcde
+
+Tema: 82
+Nota: 7.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: yearsd
+
+Tema: 82
+Nota: 7.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: yasdf
+
+Tema: 82
+Nota: 7.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: abscs
+
+Tema: 82
+Nota: 7.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: yeah
+
+Tema: 82
+Nota: 7.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: yeah
+
+Tema: 82
+Nota: 7.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: sdf
+
+Tema: 82
+Nota: 6.5
+Predata in saptamana: 8
+Deadline: 7
+Feedback: safdj
+
+Tema: 25
+Nota: 1.0
+Predata in saptamana: 8
+Deadline: 5
+Feedback: yeah
