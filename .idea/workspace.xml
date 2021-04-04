@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="92d0a2e3-8b96-4b83-8688-03e5574118c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ssvv/example/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ssvv/example/fisiere/Teme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.Lab03_WBT_Form.xls#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.Lab03_WBT_Form.xls#~f7b4a1237520a2bd2c7608d0dc4eb6d42f1ce0dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03_WBT_Form.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03_WBT_Form.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03_WBT_Form.xls~f7b4a1237520a2bd2c7608d0dc4eb6d42f1ce0dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ssvv/example/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ssvv/example/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="15" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,20 +50,7 @@
       <recent name="D:\Maria\Facultate\An III\Semestru 2\VVSS\Lab\WBT\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.App" />
-      <module name="WBT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
@@ -66,6 +62,54 @@
       <option name="PACKAGE_NAME" value="ssvv.example" />
       <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.addAssignmentWithInvalidDeadline_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
+      <option name="METHOD_NAME" value="addAssignmentWithInvalidDeadline_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.addAssignmentWithInvalidDescription_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
+      <option name="METHOD_NAME" value="addAssignmentWithInvalidDescription_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.addAssignmentWithInvalidPrimire_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
+      <option name="METHOD_NAME" value="addAssignmentWithInvalidPrimire_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,9 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.addValidAssignment_ShouldReturnEntity" />
+        <item itemvalue="JUnit.AppTest.addAssignmentWithInvalidPrimire_ShouldThrowException" />
+        <item itemvalue="JUnit.AppTest.addAssignmentWithInvalidDeadline_ShouldThrowException" />
+        <item itemvalue="JUnit.AppTest.addAssignmentWithInvalidDescription_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -108,6 +154,7 @@
       <workItem from="1616503553608" duration="3072000" />
       <workItem from="1616516481196" duration="8000" />
       <workItem from="1616766688324" duration="8000" />
+      <workItem from="1617541290807" duration="1921000" />
     </task>
     <servers />
   </component>
@@ -115,48 +162,56 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1617540395954">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="903" height="348" key="GridCell.Tab.0.bottom" timestamp="1617543232122">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395954" />
+    <state width="903" height="348" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1617543232122" />
     <state width="1233" height="400" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1617540395953">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="903" height="348" key="GridCell.Tab.0.center" timestamp="1617543232122">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395953" />
+    <state width="903" height="348" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1617543232122" />
     <state width="1233" height="400" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1617540395953">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="903" height="348" key="GridCell.Tab.0.left" timestamp="1617543232122">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395953" />
+    <state width="903" height="348" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1617543232122" />
     <state width="1233" height="400" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1617540395953">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="903" height="348" key="GridCell.Tab.0.right" timestamp="1617543232122">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395953" />
+    <state width="903" height="348" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1617543232122" />
     <state width="1233" height="400" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="491" key="GridCell.Tab.1.bottom" timestamp="1616507574168">
-      <screen x="2560" y="360" width="1920" height="1040" />
+    <state width="1233" height="336" key="GridCell.Tab.1.bottom" timestamp="1617542402599">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1233" height="336" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1617542402599" />
     <state width="1233" height="491" key="GridCell.Tab.1.bottom/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
     <state width="1233" height="491" key="GridCell.Tab.1.bottom/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="491" key="GridCell.Tab.1.center" timestamp="1616507574168">
-      <screen x="2560" y="360" width="1920" height="1040" />
+    <state width="1233" height="336" key="GridCell.Tab.1.center" timestamp="1617542402599">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1233" height="336" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1617542402599" />
     <state width="1233" height="491" key="GridCell.Tab.1.center/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
     <state width="1233" height="491" key="GridCell.Tab.1.center/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="491" key="GridCell.Tab.1.left" timestamp="1616507574168">
-      <screen x="2560" y="360" width="1920" height="1040" />
+    <state width="1233" height="336" key="GridCell.Tab.1.left" timestamp="1617542402599">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1233" height="336" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1617542402599" />
     <state width="1233" height="491" key="GridCell.Tab.1.left/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
     <state width="1233" height="491" key="GridCell.Tab.1.left/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="491" key="GridCell.Tab.1.right" timestamp="1616507574168">
-      <screen x="2560" y="360" width="1920" height="1040" />
+    <state width="1233" height="336" key="GridCell.Tab.1.right" timestamp="1617542402599">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1233" height="336" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1617542402599" />
     <state width="1233" height="491" key="GridCell.Tab.1.right/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
     <state width="1233" height="491" key="GridCell.Tab.1.right/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
     <state x="1420" y="342" key="SettingsEditor" timestamp="1616503668367">
@@ -171,5 +226,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1576" y="334" key="run.anything.popup/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504561647" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WBT$AppTest_addAssignmentWithInvalidPrimire_ShouldThrowException.ic" NAME="AppTest.addAssignmentWithInvalidPrimire_ShouldThrowException Coverage Results" MODIFIED="1617542777694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ssvv.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WBT$AppTest_addValidAssignment_ShouldReturnEntity.ic" NAME="AppTest.addValidAssignment_ShouldReturnEntity Coverage Results" MODIFIED="1617542805934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ssvv.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WBT$AppTest_addAssignmentWithInvalidDeadline_ShouldThrowException.ic" NAME="AppTest.addAssignmentWithInvalidDeadline_ShouldThrowException Coverage Results" MODIFIED="1617542737513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ssvv.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WBT$AppTest_addAssignmentWithInvalidDescription_ShouldThrowException.ic" NAME="AppTest.addAssignmentWithInvalidDescription_ShouldThrowException Coverage Results" MODIFIED="1617542711910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ssvv.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WBT$AppTest_add2AssignmentsWithSameID_ShouldReturnEntity.ic" NAME="AppTest.add2AssignmentsWithSameID_ShouldReturnEntity Coverage Results" MODIFIED="1617542599160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ssvv.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/WBT$AppTest_addAssignmentWithInvalidID_ShouldThrowException.ic" NAME="AppTest.addAssignmentWithInvalidID_ShouldThrowException Coverage Results" MODIFIED="1617542669445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ssvv.example.*</FILTER>
+    </SUITE>
   </component>
 </project>
