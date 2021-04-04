@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92d0a2e3-8b96-4b83-8688-03e5574118c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/DataInceput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Note.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Studenti.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Studenti.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/abcd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/eu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/la.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ssvv/example/repository/AbstractXMLRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ssvv/example/repository/AbstractXMLRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ssvv/example/repository/AbstractXMLRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ssvv/example/repository/AbstractXMLRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ssvv/example/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ssvv/example/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +102,9 @@
       <option name="presentableId" value="Default" />
       <updated>1616503473717</updated>
       <workItem from="1616503476146" duration="49000" />
-      <workItem from="1616503553608" duration="1345000" />
+      <workItem from="1616503553608" duration="3072000" />
+      <workItem from="1616516481196" duration="8000" />
+      <workItem from="1616766688324" duration="8000" />
     </task>
     <servers />
   </component>
@@ -127,38 +112,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1233" height="400" key="GridCell.Tab.0.bottom" timestamp="1616504805313">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.0.bottom" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="400" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
-    <state width="1233" height="400" key="GridCell.Tab.0.center" timestamp="1616504805313">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.0.center" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="400" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
-    <state width="1233" height="400" key="GridCell.Tab.0.left" timestamp="1616504805313">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.0.left" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="400" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
-    <state width="1233" height="400" key="GridCell.Tab.0.right" timestamp="1616504805313">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.0.right" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="400" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
-    <state width="1233" height="491" key="GridCell.Tab.1.bottom" timestamp="1616504743449">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.1.bottom" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="491" key="GridCell.Tab.1.bottom/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
-    <state width="1233" height="491" key="GridCell.Tab.1.center" timestamp="1616504743449">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.1.bottom/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.1.center" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="491" key="GridCell.Tab.1.center/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
-    <state width="1233" height="491" key="GridCell.Tab.1.left" timestamp="1616504743449">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.1.center/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.1.left" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="491" key="GridCell.Tab.1.left/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
-    <state width="1233" height="491" key="GridCell.Tab.1.right" timestamp="1616504743449">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1233" height="491" key="GridCell.Tab.1.left/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
+    <state width="1233" height="491" key="GridCell.Tab.1.right" timestamp="1616507574168">
+      <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state width="1233" height="491" key="GridCell.Tab.1.right/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504743449" />
+    <state width="1233" height="491" key="GridCell.Tab.1.right/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
     <state x="1420" y="342" key="SettingsEditor" timestamp="1616503668367">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
