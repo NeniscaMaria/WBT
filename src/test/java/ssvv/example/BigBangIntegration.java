@@ -5,6 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import ssvv.example.domain.Nota;
 import ssvv.example.domain.Student;
 import ssvv.example.domain.Tema;
 import ssvv.example.repository.NotaXMLRepo;
@@ -21,6 +22,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.time.LocalDate;
 
 public class BigBangIntegration{
     public static Service service;
@@ -39,7 +41,7 @@ public class BigBangIntegration{
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
         service.addStudent(new Student("id12", "John", 935, "john@gmail.com", "A"));
-        service.addTema(new Tema("id120","some description",1,2));
+        service.addTema(new Tema("id120","some description",2,1));
     }
 
     @AfterClass
@@ -332,23 +334,127 @@ public class BigBangIntegration{
         }
     }
 
+    private Nota getValidNota(){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("id12#id120", "id12", "id120", 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidStudent(){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("787#id120", "787", "id120", 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidAssignment(){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("id12#787", "id12", "787", 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidGrade(){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("id12#787", "id12", "787", 12.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidDelivery(){
+        String[] date = "2018-08-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("id12#787", "id12", "787", 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithDelay(){
+        String[] date = "2018-10-20".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("id12#id120", "id12", "id120", 10.00, dataPredare);
+    }
+
+    private Nota getNotaLateDelivery(){
+        String[] date = "2018-12-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        return new Nota("id12#id120", "id12", "id120", 10.00, dataPredare);
+    }
+
     @Test
     public void addGradeTestCase(){
-        //add valid grade
+        //add valid grade + within deadline
+        try{
+            Nota nota = getValidNota();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(nota.getNota() == addedNota);
+        }
+        catch(Exception e){
+            assert(false);
+        }
 
         //add with nonexisting student id
+        try{
+            Nota nota = getNotaWithInvalidStudent();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
+
 
         //add with nonexisting assignment id
+        try{
+            Nota nota = getNotaWithInvalidAssignment();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
 
         //add with invalid grade
+        try{
+            Nota nota = getNotaWithInvalidGrade();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
 
         //add with invalid predare
-
-        //add within deadline
+        try{
+            Nota nota = getNotaWithInvalidDelivery();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
 
         //add with 1 week delay
+        try{
+            Nota nota = getNotaWithDelay();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(nota.getNota() == addedNota);
+        }
+        catch(Exception e){
+            assert(false);
+        }
 
         //add with 3 week delay
+        try{
+            Nota nota = getNotaLateDelivery();
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(nota.getNota() == addedNota);
+        }
+        catch(Exception e){
+            assert(false);
+        }
     }
 
     @Test
