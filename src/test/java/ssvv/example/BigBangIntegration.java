@@ -38,7 +38,8 @@ public class BigBangIntegration{
         NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
-
+        service.addStudent(new Student("id12", "John", 935, "john@gmail.com", "A"));
+        service.addTema(new Tema("id120","some description",1,2));
     }
 
     @AfterClass
@@ -331,6 +332,24 @@ public class BigBangIntegration{
         }
     }
 
+    @Test
+    public void addGradeTestCase(){
+        //add valid grade
+
+        //add with nonexisting student id
+
+        //add with nonexisting assignment id
+
+        //add with invalid grade
+
+        //add with invalid predare
+        
+        //add within deadline
+
+        //add with 1 week delay
+
+        //add with 3 week delay
+    }
 
     @Test
     public void integrationAll(){

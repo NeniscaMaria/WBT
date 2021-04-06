@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92d0a2e3-8b96-4b83-8688-03e5574118c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ssvv/example/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ssvv/example/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/BigBangIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/BigBangIntegration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +157,7 @@
       <workItem from="1616516481196" duration="8000" />
       <workItem from="1616766688324" duration="8000" />
       <workItem from="1617541290807" duration="2671000" />
-      <workItem from="1617706886316" duration="1227000" />
+      <workItem from="1617706886316" duration="1892000" />
     </task>
     <servers />
   </component>

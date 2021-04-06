@@ -198,9 +198,6 @@ public class Service {
         nota.setNota(nota.getNota() - penalizare);
         System.out.println("Tema predata dupa " + delay + " saptamani este " + nota.getNota());
 
-
-
-
         notaFileRepository.save(nota);
         String filename = "src/main/java/ssvv/example/fisiere/" + student.getNume() + ".txt";
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename, true))){

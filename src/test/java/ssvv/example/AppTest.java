@@ -39,6 +39,7 @@ public class AppTest {
         TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
         NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
+
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
 
     }
