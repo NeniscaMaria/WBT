@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92d0a2e3-8b96-4b83-8688-03e5574118c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/BigBangIntegration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.~lock.Lab03_WBT_Form.xls#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.~lock.Lab03_WBT_Form.xls#~f7b4a1237520a2bd2c7608d0dc4eb6d42f1ce0dc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab03_WBT_Form.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03_WBT_Form.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03_WBT_Form.xls~f7b4a1237520a2bd2c7608d0dc4eb6d42f1ce0dc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ssvv/example/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ssvv/example/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,13 @@
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="15" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +52,7 @@
       <recent name="D:\Maria\Facultate\An III\Semestru 2\VVSS\Lab\WBT\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.BigBangIntegration">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
@@ -77,22 +79,6 @@
       <option name="PACKAGE_NAME" value="ssvv.example" />
       <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
       <option name="METHOD_NAME" value="addAssignmentWithInvalidDeadline_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.addAssignmentWithInvalidDescription_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WBT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
-      <option name="METHOD_NAME" value="addAssignmentWithInvalidDescription_ShouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,13 +116,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BigBangIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.BigBangIntegration" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BigBangIntegration" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.addValidAssignment_ShouldReturnEntity" />
         <item itemvalue="JUnit.AppTest.addAssignmentWithInvalidPrimire_ShouldThrowException" />
         <item itemvalue="JUnit.AppTest.addAssignmentWithInvalidDeadline_ShouldThrowException" />
-        <item itemvalue="JUnit.AppTest.addAssignmentWithInvalidDescription_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +155,8 @@
       <workItem from="1616503553608" duration="3072000" />
       <workItem from="1616516481196" duration="8000" />
       <workItem from="1616766688324" duration="8000" />
-      <workItem from="1617541290807" duration="1921000" />
+      <workItem from="1617541290807" duration="2671000" />
+      <workItem from="1617706886316" duration="688000" />
     </task>
     <servers />
   </component>
