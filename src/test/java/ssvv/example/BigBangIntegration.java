@@ -41,7 +41,7 @@ public class BigBangIntegration{
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
         service.addStudent(new Student("id12", "John", 935, "john@gmail.com", "A"));
-        service.addTema(new Tema("id120","some description",2,1));
+        service.addTema(new Tema("id121","some description",2,1));
     }
 
     @AfterClass
@@ -54,6 +54,7 @@ public class BigBangIntegration{
             document.appendChild(root);
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
             transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
+            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Note.xml"));
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -130,8 +131,7 @@ public class BigBangIntegration{
         //addAssignmentWithInvalidID_ShouldThrowException
         try{
             Tema tema = getTemaInvalidID();
-            Tema addedTema = service.addTema(tema);
-            assert(false);
+            Tema addedTema = service.addTema(tema);            assert(false);
         }catch(ValidationException ex){
             assert(ex.getMessage().equals("Numar tema invalid!"));
         }
@@ -337,13 +337,13 @@ public class BigBangIntegration{
     private Nota getValidNota(){
         String[] date = "2018-10-06".split("-");
         LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
-        return new Nota("id12#id120", "id12", "id120", 10.00, dataPredare);
+        return new Nota("id12#id121", "id12", "id121", 10.00, dataPredare);
     }
 
     private Nota getNotaWithInvalidStudent(){
         String[] date = "2018-10-06".split("-");
         LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
-        return new Nota("787#id120", "787", "id120", 10.00, dataPredare);
+        return new Nota("787#id121", "787", "id121", 10.00, dataPredare);
     }
 
     private Nota getNotaWithInvalidAssignment(){
@@ -367,13 +367,13 @@ public class BigBangIntegration{
     private Nota getNotaWithDelay(){
         String[] date = "2018-10-20".split("-");
         LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
-        return new Nota("id12#id120", "id12", "id120", 10.00, dataPredare);
+        return new Nota("id12#id121", "id12", "id121", 10.00, dataPredare);
     }
 
     private Nota getNotaLateDelivery(){
         String[] date = "2018-12-06".split("-");
         LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
-        return new Nota("id12#id120", "id12", "id120", 10.00, dataPredare);
+        return new Nota("id12#id121", "id12", "id121", 10.00, dataPredare);
     }
 
     @Test
