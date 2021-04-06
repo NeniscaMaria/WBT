@@ -110,10 +110,6 @@ public class BigBangIntegration{
         return new Student("id2", "John", 2, null, "A");
     }
 
-    private Student getStudentWithNullName() {
-        return new Student("id2", null, 2, "john@gmail.com", "A");
-    }
-
     @Test
     public void addAssignmentTestCase(){
         //add2AssignmentsWithSameID_ShouldReturnEntity
@@ -335,5 +331,11 @@ public class BigBangIntegration{
         }
     }
 
+
+    @Test
+    public void integrationAll(){
+        addAssignmentTestCase();
+        addStudentTestCase();
+    }
 }
 

@@ -67,22 +67,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.addValidAssignment_ShouldReturnEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WBT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
-      <option name="METHOD_NAME" value="addValidAssignment_ShouldReturnEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BigBangIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
@@ -130,13 +114,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BigBangIntegration.integrationAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.BigBangIntegration" />
+      <option name="METHOD_NAME" value="integrationAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BigBangIntegration.addStudentTestCase" />
+        <item itemvalue="JUnit.BigBangIntegration.integrationAll" />
         <item itemvalue="JUnit.BigBangIntegration.addAssignmentTestCase" />
         <item itemvalue="JUnit.BigBangIntegration" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.addValidAssignment_ShouldReturnEntity" />
       </list>
     </recent_temporary>
   </component>
@@ -163,32 +163,32 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1233" height="119" key="GridCell.Tab.0.bottom" timestamp="1617708320288">
+    <state width="1233" height="339" key="GridCell.Tab.0.bottom" timestamp="1617708443142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395954" />
-    <state width="1233" height="119" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1617708320288" />
+    <state width="1233" height="339" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="400" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="119" key="GridCell.Tab.0.center" timestamp="1617708320287">
+    <state width="1233" height="339" key="GridCell.Tab.0.center" timestamp="1617708443142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395953" />
-    <state width="1233" height="119" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1617708320287" />
+    <state width="1233" height="339" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="400" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="119" key="GridCell.Tab.0.left" timestamp="1617708320287">
+    <state width="1233" height="339" key="GridCell.Tab.0.left" timestamp="1617708443142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395953" />
-    <state width="1233" height="119" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1617708320287" />
+    <state width="1233" height="339" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="400" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1233" height="119" key="GridCell.Tab.0.right" timestamp="1617708320288">
+    <state width="1233" height="339" key="GridCell.Tab.0.right" timestamp="1617708443142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1617540395953" />
-    <state width="1233" height="119" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1617708320288" />
+    <state width="1233" height="339" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="400" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1616504805313" />
     <state width="1233" height="491" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
     <state width="1233" height="336" key="GridCell.Tab.1.bottom" timestamp="1617542402599">
