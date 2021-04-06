@@ -115,7 +115,8 @@ public class BigBangIntegration{
     }
 
     @Test
-    public void add2AssignmentsWithSameID_ShouldReturnEntity(){
+    public void addAssignmentTestCase(){
+        //add2AssignmentsWithSameID_ShouldReturnEntity
         try{
             Tema tema1 = getValidTema2();
             Tema tema2 = getValidTema2();
@@ -126,10 +127,8 @@ public class BigBangIntegration{
         }catch(Exception ex){
             assert(false);
         }
-    }
 
-    @Test
-    public void addAssignmentWithInvalidID_ShouldThrowException(){
+        //addAssignmentWithInvalidID_ShouldThrowException
         try{
             Tema tema = getTemaInvalidID();
             Tema addedTema = service.addTema(tema);
@@ -140,10 +139,8 @@ public class BigBangIntegration{
         catch(Exception e){
             assert(false);
         }
-    }
 
-    @Test
-    public void addAssignmentWithInvalidDescription_ShouldThrowException(){
+        //addAssignmentWithInvalidDescription_ShouldThrowException
         try{
             Tema tema = getTemaInvalidDescription();
             Tema addedTema = service.addTema(tema);
@@ -154,10 +151,8 @@ public class BigBangIntegration{
         catch(Exception e){
             assert(false);
         }
-    }
 
-    @Test
-    public void addAssignmentWithInvalidDeadline_ShouldThrowException(){
+        //addAssignmentWithInvalidDeadline_ShouldThrowException
         try{
             Tema tema = getTemaInvalidDeadline();
             Tema addedTema = service.addTema(tema);
@@ -168,10 +163,8 @@ public class BigBangIntegration{
         catch(Exception e){
             assert(false);
         }
-    }
 
-    @Test
-    public void addAssignmentWithInvalidPrimire_ShouldThrowException(){
+        //addAssignmentWithInvalidPrimire_ShouldThrowException
         try{
             Tema tema = getTemaInvalidPrimite();
             Tema addedTema = service.addTema(tema);
@@ -182,10 +175,8 @@ public class BigBangIntegration{
         catch(Exception e){
             assert(false);
         }
-    }
 
-    @Test
-    public void addValidAssignment_ShouldReturnEntity(){
+        //addValidAssignment_ShouldReturnEntity
         try{
             Tema tema = getValidTema();
             Tema addedTema = service.addTema(tema);
@@ -193,11 +184,11 @@ public class BigBangIntegration{
         }catch(Exception ex){
             assert(false);
         }
-
     }
 
     @Test
-    public void addValidStudent_ShouldReturnTrue() {
+    public void addStudentTestCase(){
+        //addValidStudent_ShouldReturnTrue
         Student student = getValidStudent();
         try {
             Student addedStudent = service.addStudent(student);
@@ -205,33 +196,18 @@ public class BigBangIntegration{
         } catch (Exception ex) {
             assert (false);
         }
-    }
 
-    @Test
-    public void addStudentWithInvalidName_ShouldReturnFalse() {
-        Student student = getStudentWithEmptyName();
+        //addStudentWithInvalidName_ShouldReturnFalse
+        student = getStudentWithEmptyName();
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithNullName_ShouldReturnFalse() {
-        Student student = getStudentWithNullName();
-        try {
-            service.addStudent(student);
-            assert (false);
-        } catch (Exception ex) {
-            assert (true);
-        }
-    }
-
-    @Test
-    public void addStudentWithNoGroup_ShouldReturnFalse() {
-        Student student = getStudentWithEmptyGroup();
+        //addStudentWithNullName_ShouldReturnFalse
+        student = getStudentWithEmptyGroup();
         try {
             Student addedStudent = service.addStudent(student);
             System.out.println(addedStudent);
@@ -239,137 +215,108 @@ public class BigBangIntegration{
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithInvalidGroup_ShouldReturnFalse() {
-        Student student = getStudentWithInvalidGroup();
+        //addStudentWithInvalidGroup_ShouldReturnFalse
+        student = getStudentWithInvalidGroup();
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithEmptyEmail_ShouldReturnFalse() {
-        Student student = getStudentWithEmptyEmail();
+        //addStudentWithEmptyEmail_ShouldReturnFalse
+        student = getStudentWithEmptyEmail();
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithNullEmail_ShouldReturnFalse() {
-        Student student = getStudentWithNullEmail();
+        //addStudentWithNullEmail_ShouldReturnFalse
+        student = getStudentWithNullEmail();
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    //BVA for group
-    @Test
-    public void addStudentWithValidBV0_ShouldReturnFalse() {
-        Student student = new Student("id2", "John", 0, "john@gmail.com", "A");
+        //addStudentWithValidBV0_ShouldReturnFalse
+        student = new Student("id2", "John", 0, "john@gmail.com", "A");
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithValidBV_1_ShouldReturnFalse() {
-        Student student = new Student("id2", "John", -1, "john@gmail.com", "A");
+        //addStudentWithValidBV_1_ShouldReturnFalse
+        student = new Student("id2", "John", -1, "john@gmail.com", "A");
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithValidBV_2_ShouldReturnFalse() {
-        Student student = new Student("id2", "John", -2, "john@gmail.com", "A");
+        //addStudentWithValidBV_2_ShouldReturnFalse
+        student = new Student("id2", "John", -2, "john@gmail.com", "A");
         try {
             service.addStudent(student);
             assert (false);
         } catch (Exception ex) {
             assert (true);
         }
-    }
 
-    @Test
-    public void addStudentWithValidBV3_ShouldReturnTrue() {
-        Student student = new Student("id2", "John", 3, "john@gmail.com", "A");
+        //addStudentWithValidBV3_ShouldReturnTrue
+        student = new Student("id2", "John", 3, "john@gmail.com", "A");
         try {
             Student addedStudent = service.addStudent(student);
             assert (student == addedStudent);
         } catch (Exception ex) {
             assert (false);
         }
-    }
 
-    @Test
-    public void addStudentWithValidBV922_ShouldReturnTrue() {
-        Student student = new Student("id2", "John", 922, "john@gmail.com", "A");
+        //addStudentWithValidBV922_ShouldReturnTrue
+        student = new Student("id2", "John", 922, "john@gmail.com", "A");
         try {
             Student addedStudent = service.addStudent(student);
             assert (student == addedStudent);
         } catch (Exception ex) {
             assert (false);
         }
-    }
 
-    @Test
-    public void addStudentWithValidBV500_ShouldReturnTrue() {
-        Student student = new Student("id2", "John", 500, "john@gmail.com", "A");
+        //addStudentWithValidBV500_ShouldReturnTrue
+        student = new Student("id2", "John", 500, "john@gmail.com", "A");
         try {
             Student addedStudent = service.addStudent(student);
             assert (addedStudent == student);
         } catch (Exception ex) {
             assert (false);
         }
-    }
 
-
-    @Test
-    public void addStudentWithValidTeacherName_ShouldReturnTrue()
-    {
-        Student student = getValidStudent();
+        //addStudentWithValidTeacherName_ShouldReturnTrue
+        student = getValidStudent();
         try{
             Student addedStudent = service.addStudent(student);
             assert(addedStudent == student);
         }catch (Exception ex){
             assert(false);
         }
-    }
 
-    @Test
-    public void addStudentWithInvalidTeacherName_ShouldReturnFalse()
-    {
-        Student student = getStudentWithInvalidTeacherName();
+        //addStudentWithInvalidTeacherName_ShouldReturnFalse
+        student = getStudentWithInvalidTeacherName();
         try{
             service.addStudent(student);
             assert(false);
         }catch (Exception ex){
             assert(true);
         }
-    }
 
-    @Test
-    public void addStudentWithValidId_ShouldReturnTrue()
-    {
-        Student student = getValidStudent();
+        //addStudentWithValidId_ShouldReturnTrue
+        student = getValidStudent();
         try{
             Student addedStudent = service.addStudent(student);
 
@@ -377,12 +324,9 @@ public class BigBangIntegration{
         }catch (Exception ex){
             assert(false);
         }
-    }
 
-    @Test
-    public void addStudentWithInvalidId_ShouldReturnFalse()
-    {
-        Student student = getStudentWithInvalidId();
+        //addStudentWithInvalidId_ShouldReturnFalse
+        student = getStudentWithInvalidId();
         try{
             service.addStudent(student);
             assert(false);
