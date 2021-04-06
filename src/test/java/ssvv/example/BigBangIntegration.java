@@ -343,7 +343,7 @@ public class BigBangIntegration{
         //add with invalid grade
 
         //add with invalid predare
-        
+
         //add within deadline
 
         //add with 1 week delay
@@ -355,6 +355,7 @@ public class BigBangIntegration{
     public void integrationAll(){
         addAssignmentTestCase();
         addStudentTestCase();
+        addGradeTestCase();
     }
 }
 
