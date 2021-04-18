@@ -5,7 +5,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import ssvv.example.domain.Nota;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import ssvv.example.domain.Student;
 import ssvv.example.domain.Tema;
 import ssvv.example.repository.NotaXMLRepo;
@@ -22,16 +23,16 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.time.LocalDate;
 
 public class topDown {
     public static Service service;
+    public static String studentFileName;
 
-    @BeforeClass
-    public static void setup() {
+    private static void setup() {
         StudentValidator studentValidator = new StudentValidator();
         TemaValidator temaValidator = new TemaValidator();
         String filenameStudent = "src/test/java/ssvv/example/fisiere/Studenti.xml";
+        studentFileName = filenameStudent;
         String filenameTema = "src/test/java/ssvv/example/fisiere/Teme.xml";
         String filenameNota = "src/test/java/ssvv/example/fisiere/Note.xml";
 
@@ -40,10 +41,9 @@ public class topDown {
         NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
         NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
-  }
+    }
 
-    @AfterClass
-    public static void tearDown() {
+    private static void tearDown() {
         service = null;
         //empty the file after finish
         try {
@@ -111,8 +111,58 @@ public class topDown {
         return new Student("id2", "John", 2, null, "A");
     }
 
+    private Element createElementfromStudent(Document document, Student entity) {
+        Element e = document.createElement("student");
+        e.setAttribute("idStudent", entity.getID());
+
+        Element nume = document.createElement("nume");
+        nume.setTextContent(entity.getNume());
+        e.appendChild(nume);
+
+        Element grupa = document.createElement("grupa");
+        int nrGrupa = entity.getGrupa();
+        grupa.setTextContent(String.valueOf(nrGrupa));
+        e.appendChild(grupa);
+
+        Element email = document.createElement("email");
+        email.setTextContent(entity.getEmail());
+        e.appendChild(email);
+
+        Element profesor = document.createElement("profesor");
+        profesor.setTextContent(entity.getTeacher());
+        e.appendChild(profesor);
+
+        return e;
+    }
+
+    private Student stubAddStudent(Student student){
+        try {
+            Document document = DocumentBuilderFactory
+                    .newInstance()
+                    .newDocumentBuilder()
+                    .newDocument();
+            Element root  = document.createElement("inbox");
+            document.appendChild(root);
+            service.getAllStudenti().forEach(e->{
+                Element elem = createElementfromStudent(document,e);
+                root.appendChild(elem);
+            });
+
+            //write Document to file
+            Transformer transformer = TransformerFactory.
+                    newInstance().newTransformer();
+            transformer.transform(new DOMSource(document),
+                    new StreamResult(studentFileName));
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return student;
+    }
+
     @Test
     public void addStudentTestCase(){
+        setup();
         //addValidStudent_ShouldReturnTrue
         Student student = getValidStudent();
         try {
@@ -257,6 +307,68 @@ public class topDown {
             assert(false);
         }catch (Exception ex){
             assert(true);
+        }
+        tearDown();
+    }
+
+    @Test
+    public void addAssignmentTestCase(){
+        setup();
+        //addAssignmentWithInvalidID_ShouldThrowException
+        try{
+            Tema tema = getTemaInvalidID();
+            Tema addedTema = service.addTema(tema);
+            assert(false);
+        }catch(ValidationException ex){
+            assert(ex.getMessage().equals("Numar tema invalid!"));
+        }
+        catch(Exception e){
+            assert(false);
+        }
+
+        //addAssignmentWithInvalidDescription_ShouldThrowException
+        try{
+            Tema tema = getTemaInvalidDescription();
+            Tema addedTema = service.addTema(tema);
+            assert(false);
+        }catch(ValidationException ex){
+            assert(ex.getMessage().equals("Descriere invalida!"));
+        }
+        catch(Exception e){
+            assert(false);
+        }
+
+        //addAssignmentWithInvalidDeadline_ShouldThrowException
+        try{
+            Tema tema = getTemaInvalidDeadline();
+            Tema addedTema = service.addTema(tema);
+            assert(false);
+        }catch(ValidationException ex){
+            assert(ex.getMessage().equals("Deadlineul trebuie sa fie intre 1-14."));
+        }
+        catch(Exception e){
+            assert(false);
+        }
+
+        //addAssignmentWithInvalidPrimire_ShouldThrowException
+        try{
+            Tema tema = getTemaInvalidPrimite();
+            Tema addedTema = service.addTema(tema);
+            assert(false);
+        }catch(ValidationException ex){
+            assert(ex.getMessage().equals("Saptamana primirii trebuie sa fie intre 1-14."));
+        }
+        catch(Exception e){
+            assert(false);
+        }
+
+        //addValidAssignment_ShouldReturnEntity
+        try{
+            Tema tema = getValidTema();
+            Tema addedTema = service.addTema(tema);
+            assert(addedTema==null);
+        }catch(Exception ex){
+            assert(false);
         }
     }
 
