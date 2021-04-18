@@ -29,19 +29,22 @@ import java.time.LocalDate;
  */
 public class AppTest {
     public static Service service;
+    public static StudentValidator studentValidator;
+    public static TemaValidator temaValidator;
+    public static NotaValidator notaValidator;
+    public static String studentFileName = "src/test/java/ssvv/example/fisiere/Studenti.xml";
+    public static String temaFileName = "src/test/java/ssvv/example/fisiere/Teme.xml";
+    public static String notaFileName = "src/test/java/ssvv/example/fisiere/Note.xml";
 
     @BeforeClass
     public static void setup() {
-        StudentValidator studentValidator = new StudentValidator();
-        TemaValidator temaValidator = new TemaValidator();
-        String filenameStudent = "src/test/java/ssvv/example/fisiere/Studenti.xml";
-        String filenameTema = "src/test/java/ssvv/example/fisiere/Teme.xml";
-        String filenameNota = "src/test/java/ssvv/example/fisiere/Note.xml";
+        studentValidator = new StudentValidator();
+        temaValidator = new TemaValidator();
 
-        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
-        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
-        NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
-        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
+        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(studentFileName);
+        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(temaFileName);
+        notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
+        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(notaFileName);
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
         service.addStudent(new Student("id12", "John", 935, "john@gmail.com", "A"));
         service.addTema(new Tema("id121","some description",2,1));
@@ -466,6 +469,72 @@ public class AppTest {
         addAssignmentTestCase();
         addStudentTestCase();
         addGradeTestCase();
+    }
+
+    // top down
+
+    private Student getNewValidStudent() {
+        return new Student("7", "John", 935, "john@gmail.com", "A");
+    }
+
+    private Tema getNewValidTema(){
+        return new Tema("7","some description",2,1);
+    }
+
+    private Nota getNewValidNota(Student student, Tema tema){
+        LocalDate dataPredare = LocalDate.of(2018, 10, 10);
+        return new Nota(student.getID() + "#" + tema.getID(), student.getID(), tema.getID(), 10.00, dataPredare);
+    }
+
+    @Test
+    public void addStudentTopDown(){
+        Student student = getValidStudent();
+        try{
+            studentValidator.validate(student);
+            Student saved = service.addStudent(student);
+            assert(student == saved);
+        }
+        catch (Exception e){
+            assert false;
+        }
+    }
+
+    @Test
+    public void addStudentAssignmentTopDown(){
+        Student student = getValidStudent();
+        Tema tema = getValidTema();
+        try{
+            studentValidator.validate(student);
+            Student savedStudent = service.addStudent(student);
+            assert(student == savedStudent);
+            temaValidator.validate(tema);
+            Tema savedTema = service.addTema(tema);
+            assert(tema == savedTema);
+        }
+        catch (Exception e){
+            assert false;
+        }
+    }
+
+    @Test
+    public void addStudentAssignmentGradeTopDown(){
+        Student student = getNewValidStudent();
+        Tema tema = getNewValidTema();
+        Nota nota = getNewValidNota(student, tema);
+        try{
+            studentValidator.validate(student);
+            Student savedStudent = service.addStudent(student);
+            assert(student == savedStudent);
+            temaValidator.validate(tema);
+            Tema savedTema = service.addTema(tema);
+            assert(tema == savedTema);
+            notaValidator.validate(nota);
+            double savedNota = service.addNota(nota, "good");
+            assert(nota.getNota() == savedNota);
+        }
+        catch (Exception e){
+            assert false;
+        }
     }
 
 }

@@ -772,3 +772,9 @@ Nota: 10.0
 Predata in saptamana: 2
 Deadline: 2
 Feedback: good
+
+Tema: 7
+Nota: 10.0
+Predata in saptamana: 2
+Deadline: 2
+Feedback: good

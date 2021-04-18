@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92d0a2e3-8b96-4b83-8688-03e5574118c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/Integration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ssvv/example/fisiere/John.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ssvv/example/fisiere/John.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Note.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Note.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Studenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Studenti.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/topDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/topDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ssvv/example/topDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ssvv/example/topDown.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +62,7 @@
       <recent name="D:\Maria\Facultate\An III\Semestru 2\VVSS\Lab\WBT\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Integration.addStudentTopDown">
+  <component name="RunManager" selected="JUnit.AppTest.addStudentAssignmentGradeTopDown">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ssvv.example.App" />
       <module name="WBT" />
@@ -78,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.integrationAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.addStudentAssignmentGradeTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
         <pattern>
@@ -88,13 +80,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ssvv.example" />
       <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
-      <option name="METHOD_NAME" value="integrationAll" />
+      <option name="METHOD_NAME" value="addStudentAssignmentGradeTopDown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Integration.addStudentAssignmentGradeTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.addStudentAssignmentTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +95,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.Integration" />
-      <option name="METHOD_NAME" value="addStudentAssignmentGradeTopDown" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
+      <option name="METHOD_NAME" value="addStudentAssignmentTopDown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.addStudentTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
+      <option name="METHOD_NAME" value="addStudentTopDown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,37 +150,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topDown.addGradeTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WBT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.topDown" />
-      <option name="METHOD_NAME" value="addGradeTestCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="JUnit.Integration.addStudentTopDown" />
       <item itemvalue="JUnit.Integration.addStudentAssignmentTopDown" />
-      <item itemvalue="JUnit.Integration.addStudentAssignmentGradeTopDown" />
-      <item itemvalue="JUnit.topDown.addGradeTestCase" />
-      <item itemvalue="JUnit.AppTest.integrationAll" />
+      <item itemvalue="JUnit.AppTest.addStudentTopDown" />
+      <item itemvalue="JUnit.AppTest.addStudentAssignmentTopDown" />
+      <item itemvalue="JUnit.AppTest.addStudentAssignmentGradeTopDown" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.addStudentAssignmentGradeTopDown" />
+        <item itemvalue="JUnit.AppTest.addStudentAssignmentTopDown" />
+        <item itemvalue="JUnit.AppTest.addStudentTopDown" />
         <item itemvalue="JUnit.Integration.addStudentTopDown" />
         <item itemvalue="JUnit.Integration.addStudentAssignmentTopDown" />
-        <item itemvalue="JUnit.Integration.addStudentAssignmentGradeTopDown" />
-        <item itemvalue="JUnit.AppTest.integrationAll" />
-        <item itemvalue="JUnit.topDown.addGradeTestCase" />
       </list>
     </recent_temporary>
   </component>
