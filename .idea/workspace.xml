@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92d0a2e3-8b96-4b83-8688-03e5574118c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/Integration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ssvv/example/fisiere/John.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ssvv/example/fisiere/John.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Note.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Note.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Studenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Studenti.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ssvv/example/fisiere/Teme.xml" afterDir="false" />
@@ -68,7 +70,7 @@
       <recent name="D:\Maria\Facultate\An III\Semestru 2\VVSS\Lab\WBT\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.topDown.addGradeTestCase">
+  <component name="RunManager" selected="JUnit.Integration.addStudentTopDown">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ssvv.example.App" />
       <module name="WBT" />
@@ -76,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.integrationAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
         <pattern>
@@ -86,12 +88,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ssvv.example" />
       <option name="MAIN_CLASS_NAME" value="ssvv.example.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="integrationAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigBangIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Integration.addStudentAssignmentGradeTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WBT" />
       <extension name="coverage">
         <pattern>
@@ -100,8 +103,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.BigBangIntegration" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Integration" />
+      <option name="METHOD_NAME" value="addStudentAssignmentGradeTopDown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Integration.addStudentAssignmentTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Integration" />
+      <option name="METHOD_NAME" value="addStudentAssignmentTopDown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Integration.addStudentTopDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WBT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssvv.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ssvv.example" />
+      <option name="MAIN_CLASS_NAME" value="ssvv.example.Integration" />
+      <option name="METHOD_NAME" value="addStudentTopDown" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,53 +158,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topDown.cmon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WBT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.topDown" />
-      <option name="METHOD_NAME" value="cmon" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="topDown.yeah" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WBT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ssvv.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ssvv.example" />
-      <option name="MAIN_CLASS_NAME" value="ssvv.example.topDown" />
-      <option name="METHOD_NAME" value="yeah" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="JUnit.AppTest" />
-      <item itemvalue="JUnit.BigBangIntegration" />
+      <item itemvalue="JUnit.Integration.addStudentTopDown" />
+      <item itemvalue="JUnit.Integration.addStudentAssignmentTopDown" />
+      <item itemvalue="JUnit.Integration.addStudentAssignmentGradeTopDown" />
       <item itemvalue="JUnit.topDown.addGradeTestCase" />
-      <item itemvalue="JUnit.topDown.yeah" />
-      <item itemvalue="JUnit.topDown.cmon" />
+      <item itemvalue="JUnit.AppTest.integrationAll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Integration.addStudentTopDown" />
+        <item itemvalue="JUnit.Integration.addStudentAssignmentTopDown" />
+        <item itemvalue="JUnit.Integration.addStudentAssignmentGradeTopDown" />
+        <item itemvalue="JUnit.AppTest.integrationAll" />
         <item itemvalue="JUnit.topDown.addGradeTestCase" />
-        <item itemvalue="JUnit.topDown.cmon" />
-        <item itemvalue="JUnit.topDown.yeah" />
-        <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.BigBangIntegration" />
       </list>
     </recent_temporary>
   </component>
@@ -210,35 +214,39 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2663" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617712237381" />
-    <state width="1877" height="210" key="GridCell.Tab.0.bottom" timestamp="1618755531553">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1618767550225">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618752288666" />
-    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755531553" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618767550225" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1618769022200">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618769022200" />
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755777323" />
     <state width="1233" height="339" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="475" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1618747732024" />
     <state width="1233" height="491" key="GridCell.Tab.0.bottom/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1877" height="210" key="GridCell.Tab.0.center" timestamp="1618755531553">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1618769022200">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618752288666" />
-    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755531553" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618769022200" />
+    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755777323" />
     <state width="1233" height="339" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="475" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1618747732024" />
     <state width="1233" height="491" key="GridCell.Tab.0.center/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1877" height="210" key="GridCell.Tab.0.left" timestamp="1618755531552">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1618769022200">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618752288666" />
-    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755531552" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618769022200" />
+    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755777322" />
     <state width="1233" height="339" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="475" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1618747732024" />
     <state width="1233" height="491" key="GridCell.Tab.0.left/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
-    <state width="1877" height="210" key="GridCell.Tab.0.right" timestamp="1618755531553">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1618769022200">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618752288666" />
-    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755531553" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1618769022200" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618755777323" />
     <state width="1233" height="339" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1617708443142" />
     <state width="1233" height="475" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1618747732024" />
     <state width="1233" height="491" key="GridCell.Tab.0.right/2560.360.1920.1040/0.0.2560.1400@2560.360.1920.1040" timestamp="1616507574168" />
@@ -315,7 +323,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ssvv/example/topDown.java</url>
-          <line>153</line>
+          <line>152</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

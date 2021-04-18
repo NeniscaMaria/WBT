@@ -51,16 +51,16 @@ public class AppTest {
     public static void tearDown() {
         service = null;
         //empty the file after finish
-        try {
-            Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-            Element root  = document.createElement("inbox");
-            document.appendChild(root);
-            Transformer transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
-            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Note.xml"));
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+//        try {
+//            Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+//            Element root  = document.createElement("inbox");
+//            document.appendChild(root);
+//            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+//            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
+//            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Note.xml"));
+//        }catch(Exception e){
+//            e.printStackTrace();
+//        }
     }
 
     private Tema getValidTema(){

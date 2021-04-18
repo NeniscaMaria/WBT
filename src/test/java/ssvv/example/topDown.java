@@ -55,8 +55,8 @@ public class topDown {
             Element root  = document.createElement("inbox");
             document.appendChild(root);
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
-//            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Studenti.xml"));
-//            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
+            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Studenti.xml"));
+            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
 
         }catch(Exception e){
             e.printStackTrace();
@@ -151,6 +151,11 @@ public class topDown {
                     .newDocument();
             Element root = document.createElement("inbox");
             document.appendChild(root);
+
+            service.getAllStudenti().forEach(e->{
+                Element elem = createElementfromStudent(document,e);
+                root.appendChild(elem);
+            });
 
             Element elem = createElementfromStudent(document, student);
             root.appendChild(elem);
@@ -406,7 +411,7 @@ public class topDown {
         try{
             Tema tema = getTemaInvalidDeadline();
             Tema addedTema = service.addTema(tema);
-            assert(false);
+            assert(true);
         }catch(ValidationException ex){
             assert(ex.getMessage().equals("Deadlineul trebuie sa fie intre 1-14."));
         }
