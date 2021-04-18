@@ -7,6 +7,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import ssvv.example.domain.Nota;
 import ssvv.example.domain.Student;
 import ssvv.example.domain.Tema;
 import ssvv.example.repository.NotaXMLRepo;
@@ -23,23 +24,26 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.sql.SQLOutput;
+import java.time.LocalDate;
 
 public class topDown {
     public static Service service;
     public static String studentFileName;
+    public static String temaFileName;
+    public static String notaFileName;
 
     private static void setup() {
         StudentValidator studentValidator = new StudentValidator();
         TemaValidator temaValidator = new TemaValidator();
-        String filenameStudent = "src/test/java/ssvv/example/fisiere/Studenti.xml";
-        studentFileName = filenameStudent;
-        String filenameTema = "src/test/java/ssvv/example/fisiere/Teme.xml";
-        String filenameNota = "src/test/java/ssvv/example/fisiere/Note.xml";
+        studentFileName = "src/test/java/ssvv/example/fisiere/Studenti.xml";
+        temaFileName = "src/test/java/ssvv/example/fisiere/Teme.xml";
+        notaFileName = "src/test/java/ssvv/example/fisiere/Note.xml";
 
-        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(filenameStudent);
-        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(filenameTema);
+        StudentXMLRepo studentXMLRepository = new StudentXMLRepo(studentFileName);
+        TemaXMLRepo temaXMLRepository = new TemaXMLRepo(temaFileName);
         NotaValidator notaValidator = new NotaValidator(studentXMLRepository, temaXMLRepository);
-        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(filenameNota);
+        NotaXMLRepo notaXMLRepository = new NotaXMLRepo(notaFileName);
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
     }
 
@@ -51,30 +55,33 @@ public class topDown {
             Element root  = document.createElement("inbox");
             document.appendChild(root);
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
-            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
+//            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Studenti.xml"));
+//            transformer.transform(new DOMSource(document), new StreamResult("src/test/java/ssvv/example/fisiere/Teme.xml"));
+
         }catch(Exception e){
             e.printStackTrace();
         }
     }
 
+
     private Tema getValidTema(){
-        return new Tema("1","some description",1,2);
+        return new Tema("1","some description",2,1);
     }
 
     private Tema getValidTema2(){
-        return new Tema("1000000","some description",1,2);
+        return new Tema("1000000","some description",2,1);
     }
 
     private Tema getTemaInvalidID(){
-        return new Tema("","some description",1,2);
+        return new Tema("","some description",2,1);
     }
 
     private Tema getTemaInvalidDescription(){
-        return new Tema("3","",1,2);
+        return new Tema("3","",2,1);
     }
 
     private Tema getTemaInvalidDeadline(){
-        return new Tema("4","some description",22,2);
+        return new Tema("4","some description",1,2);
     }
 
     private Tema getTemaInvalidPrimite(){
@@ -82,7 +89,7 @@ public class topDown {
     }
 
     private Student getValidStudent() {
-        return new Student("id1", "John", 935, "john@gmail.com", "A");
+        return new Student("id2", "John", 935, "john@gmail.com", "A");
     }
 
     private Student getStudentWithEmptyName() {
@@ -110,6 +117,7 @@ public class topDown {
     private Student getStudentWithNullEmail() {
         return new Student("id2", "John", 2, null, "A");
     }
+
 
     private Element createElementfromStudent(Document document, Student entity) {
         Element e = document.createElement("student");
@@ -141,12 +149,11 @@ public class topDown {
                     .newInstance()
                     .newDocumentBuilder()
                     .newDocument();
-            Element root  = document.createElement("inbox");
+            Element root = document.createElement("inbox");
             document.appendChild(root);
-            service.getAllStudenti().forEach(e->{
-                Element elem = createElementfromStudent(document,e);
-                root.appendChild(elem);
-            });
+
+            Element elem = createElementfromStudent(document, student);
+            root.appendChild(elem);
 
             //write Document to file
             Transformer transformer = TransformerFactory.
@@ -158,6 +165,63 @@ public class topDown {
             e.printStackTrace();
         }
         return student;
+    }
+
+
+
+    private Element createElementfromTema(Document document, Tema entity) {
+        Element e = document.createElement("nrTema");
+        e.setAttribute("nrTema", entity.getID());
+
+        Element descriere = document.createElement("descriere");
+        descriere.setTextContent(entity.getDescriere());
+        e.appendChild(descriere);
+
+        Element deadline = document.createElement("deadline");
+        int dataDeadline = entity.getDeadline();
+        deadline.setTextContent(String.valueOf(dataDeadline));
+        e.appendChild(deadline);
+
+        Element primire = document.createElement("primire");
+        int dataPrimire = entity.getPrimire();
+        primire.setTextContent(String.valueOf(dataPrimire));
+        e.appendChild(primire);
+
+        return e;
+    }
+
+
+    private Tema stubAddAssignment(Tema tema){
+        try {
+            Document document = DocumentBuilderFactory
+                    .newInstance()
+                    .newDocumentBuilder()
+                    .newDocument();
+            Element root = document.createElement("inbox");
+            document.appendChild(root);
+
+            Element elem = createElementfromTema(document, tema);
+            root.appendChild(elem);
+
+            //write Document to file
+            Transformer transformer = TransformerFactory.
+                    newInstance().newTransformer();
+            transformer.transform(new DOMSource(document),
+                    new StreamResult(temaFileName));
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return tema;
+    }
+
+    @Test
+    public void cmon(){
+        setup();
+        Student student = getValidStudent();
+        stubAddStudent(student);
+        stubAddAssignment(getValidTema());
+        tearDown();
     }
 
     @Test
@@ -371,5 +435,161 @@ public class topDown {
             assert(false);
         }
     }
+
+
+    private Nota getValidNota(Student student, Tema tema){
+        String[] date = "2018-10-16".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+        return new Nota(id, student.getID(), tema.getID(), 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidStudent(Student student, Tema tema){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+        return new Nota(id, student.getID() + "none", tema.getID(), 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidAssignment(Student student, Tema tema){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+
+        return new Nota(id, student.getID() + "none", tema.getID() + "none", 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidGrade(Student student, Tema tema){
+        String[] date = "2018-10-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+        return new Nota(id, student.getID(), tema.getID(), 12.00, dataPredare);
+    }
+
+    private Nota getNotaWithInvalidDelivery(Student student, Tema tema){
+        String[] date = "2018-08-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+        return new Nota(id, student.getID(), tema.getID(), 10.00, dataPredare);
+    }
+
+    private Nota getNotaWithDelay(Student student, Tema tema){
+        String[] date = "2018-10-20".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+
+        return new Nota(id, student.getID(), tema.getID(), 10.00, dataPredare);
+    }
+
+    private Nota getNotaLateDelivery(Student student, Tema tema){
+        String[] date = "2018-12-06".split("-");
+        LocalDate dataPredare = LocalDate.of(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+        String id = student.getID() + "#" + tema.getID();
+
+        return new Nota(id, student.getID(), tema.getID(), 10.00, dataPredare);
+    }
+
+
+
+    @Test
+    public void addGradeTestCase(){
+        Student student = getValidStudent();
+        Tema tema = getValidTema();
+        setup();
+        //add valid grade + within deadline
+        try{
+            Nota nota = getValidNota(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(nota.getNota() == addedNota);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+            assert(false);
+        }
+        tearDown();
+
+        setup();
+        //add with nonexisting student id
+        try{
+            Nota nota = getNotaWithInvalidStudent(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
+        tearDown();
+
+        setup();
+        //add with nonexisting assignment id
+        try{
+            Nota nota = getNotaWithInvalidAssignment(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
+        tearDown();
+
+        setup();
+        //add with invalid grade
+        try{
+            Nota nota = getNotaWithInvalidGrade(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
+        tearDown();
+
+        setup();
+        //add with invalid predare
+        try{
+            Nota nota = getNotaWithInvalidDelivery(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(false);
+        }
+        catch(Exception e){
+            assert(true);
+        }
+        tearDown();
+
+        setup();
+        //add with 1 week delay
+        try{
+            Nota nota = getNotaWithDelay(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(nota.getNota() == addedNota);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+            assert(false);
+        }
+        tearDown();
+
+        setup();
+        //add with 3 week delay
+        try{
+            Nota nota = getNotaLateDelivery(stubAddStudent(student), stubAddAssignment(tema));
+            String feedback = "very good";
+            double addedNota = service.addNota(nota, feedback);
+            assert(nota.getNota() == addedNota);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+            assert(false);
+        }
+        tearDown();
+    }
+
+
 
 }
