@@ -3,6 +3,7 @@ bin
 *.log
 dist
 node_modules
+workspace.xml
 
 # Eclipse
 .classpath

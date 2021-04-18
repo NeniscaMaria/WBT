@@ -197,55 +197,397 @@ Predata in saptamana: 10
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 10.0
 Predata in saptamana: 1
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 7.5
 Predata in saptamana: 3
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 1.0
 Predata in saptamana: 10
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 10.0
 Predata in saptamana: 1
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 7.5
 Predata in saptamana: 3
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 1.0
 Predata in saptamana: 10
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 10.0
 Predata in saptamana: 1
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 7.5
 Predata in saptamana: 3
 Deadline: 2
 Feedback: very good
 
+<<<<<<< HEAD
 Tema: id120
+=======
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 1.0
+Predata in saptamana: 10
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: very good
+
+Tema: id121
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
 Nota: 1.0
 Predata in saptamana: 10
 Deadline: 2

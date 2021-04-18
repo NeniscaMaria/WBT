@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><inbox><nota idNota="id12#id120"><idStudent>id12</idStudent><idTema>id120</idTema><notaProf>10.0</notaProf><dataCurenta>2018-10-06</dataCurenta></nota></inbox>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><inbox/>
+>>>>>>> 0d049b28387d44327f9eda6c59f7337f0ad54aaa
